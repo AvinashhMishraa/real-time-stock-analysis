@@ -12,7 +12,7 @@
 
 <br>
 
-## 1. Overview
+# 1. Overview
 
 This guide provides the instructions for building a Streamlit application using Snowpark for Python and <strong><span style="color: blue;">[Cybersyn data](https://app.cybersyn.com/data_catalog/)</span></strong> from the Snowflake Marketplace.
 
