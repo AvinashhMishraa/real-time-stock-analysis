@@ -4,7 +4,7 @@
 
 ---
 
-<div style="padding: 10px; background-color: #E2FFEC">
+<div style="padding: 10px; background-color: yellow">
 
 # Real Time Stock Analysis
 
