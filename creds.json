@@ -1,0 +1,8 @@
+{
+    "account": "<your snowflake account identifier>",
+    "user": "<your snowflake username>",
+    "password": "<your snowflake password>",
+    "role": "ACCOUNTADMIN", 
+    "database": "cybersyn_financial_economic_essentials",
+    "schema": "cybersyn"
+}
