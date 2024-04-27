@@ -60,3 +60,6 @@ Streamlit enables data scientists and Python developers to combine Streamlit's c
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In particular, we will use data in schema <strong>CYBERSYN</strong> from tables <strong>STOCK_PRICE_TIMESERIES</strong> and <strong>FX_RATES_TIMESERIES</strong>.
 
 
+<p align="center">
+  <img src="[https://github.com/AvinashhMishraa/real-time-stock-analysis/blob/main/Media/Snowpark%20Workflow.PNG](https://github.com/AvinashhMishraa/real-time-stock-analysis/blob/main/Media/Sample%20Data%20View%20-%20stock%20price.PNG)">
+</p>
