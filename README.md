@@ -61,13 +61,19 @@ Streamlit enables data scientists and Python developers to combine Streamlit's c
 
 <br>
 
-You can have a look at the data description from the link above, but here is sample view of <strong><span style="background-color: yellow">STOCK_PRICE_TIMESERIES</span></strong> :
+You can have a look at the data description from the link above, but here is a sample view of <strong><span style="background-color: yellow">STOCK_PRICE_TIMESERIES</span></strong> (65.6 million rows) :
 
 <p align="center">
   <img src="Media/Sample Data View - stock price.PNG">
 </p>
 
+<br>
 
+And here is the sample view of <strong><span style="background-color: yellow">FX_RATES_TIMESERIES</span></strong> (1.0 million rows) :
+
+<p align="center">
+  <img src="Media/Sample Data View - stock price.PNG">
+</p>
 
 
 ```diff
