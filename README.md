@@ -20,7 +20,9 @@ This guide provides the instructions for building a Streamlit application using 
 
 A Streamlit application that loads and visualizes daily <strong>stock performance</strong> and <strong>foreign exchange (FX) rate</strong> data loaded from <strong><span style="color: blue;">[Cybersyn](https://app.snowflake.com/marketplace/listing/GZTSZAS2KF7/cybersyn-financial-economic-essentials)</span></strong> on the Snowflake Marketplace using Snowpark for Python.
 
-Put the gif here
+![](Media/stock_performance_exchange_rate.gif)
+
+<br>
 
 ### What is Snowspark?
 
