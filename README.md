@@ -35,7 +35,7 @@ Learn more about <strong><span style="color: blue;">[Snowpark](https://snowflake
 <br>
 
 <p align="center">
-  <img src="https://github.com/AvinashhMishraa/real-time-stock-analysis/blob/main/Media/Snowpark%20Workflow.PNG">
+  <img src="Media/Snowpark Workflow.PNG">
 </p>
 
 <br>
@@ -72,7 +72,7 @@ You can have a look at the data description from the link above, but here is a s
 And here is the sample view of <strong><span style="background-color: yellow">FX_RATES_TIMESERIES</span></strong> (1.0 million rows) :
 
 <p align="center">
-  <img src="Media/Sample Data View - stock price.PNG">
+  <img src="Media/Sample Data View - FX Rates Timeseries.PNG">
 </p>
 
 
