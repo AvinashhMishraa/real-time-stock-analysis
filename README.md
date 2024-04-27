@@ -91,3 +91,9 @@ require 'redcarpet'
 markdown = Redcarpet.new("Hello World!")
 puts markdown.to_html
 ```
+
+<br>
+
+#rgb[Text using 3 chars notation (red = f00)]
+#rrggbb[Text using 6 chars notation (red = ff0000)]
+#aarrggbb[Text using 8 chars notation (red = ffff0000)]
