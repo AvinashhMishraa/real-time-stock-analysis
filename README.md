@@ -31,3 +31,20 @@ The set of libraries and runtime in Snowflake that securely deploy and process n
 <strong>Flexible Runtime Constructs</strong> - Snowpark provides flexible runtime constructs that allow users to bring in and run custom logic. Developers can seamlessly build data pipelines, ML models, and data applications with User-Defined Functions and Stored Procedures.
 
 Learn more about <strong><span style="color: blue;">[Snowpark](https://snowflake.com/en/data-cloud/snowpark/)</span></strong>
+
+<br>
+
+<p align="center">
+  <img src="https://github.com/AvinashhMishraa/real-time-stock-analysis/blob/main/Media/Snowpark%20Workflow.PNG">
+</p>
+
+<br>
+
+<span style="font-size: larger">What is Streamlit?</span>
+
+Streamlit enables data scientists and Python developers to combine Streamlit's component-rich, open-source Python library with the scale, performance, and security of the Snowflake platform.
+
+
+<span style="font-size: larger">What is Cybersyn?</span>
+
+Cybersyn is a data-as-a-service-company creating a real-time view of the world's economy with analytics-ready economic data on Snowflake Marketplace. Cybersyn builds derived data products from datasets that are difficult to procure, clean, or join. With Cybersyn, you can access external data directly in your Snowflake instance - no ETL requred.
