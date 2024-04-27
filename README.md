@@ -61,6 +61,14 @@ Streamlit enables data scientists and Python developers to combine Streamlit's c
 
 <span style="background-color: `#ffffff`;">This text has a yellow background.</span>
 
+```diff
+- text in red
++ text in green
+! text in orange
+# text in gray
+@@ text in purple (and bold)@@
+```
+
 
 <br>
 
