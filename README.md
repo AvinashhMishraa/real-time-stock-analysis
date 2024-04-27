@@ -414,7 +414,33 @@ pip install snowflake-connector-python
 pip install snowflake-snowpark-python
 pip install streamlit
 ```
-   
+
+2. Then you need to create a file where you would put all you <strong>credentials</strong> for connecting with Snowflake and Snowpark.
+
+```Python
+from snowflake.snowpark.session import Session
+
+# Define connection parameters
+connection_parameters = {
+    "account": "<your snowflake account>",
+    "user": "<your snowflake user>",
+    "password": "<your snowflake password>",
+    "role": "<your snowflake role>",  # optional
+    "warehouse": "<your snowflake warehouse>",  # optional
+    "database": "<your snowflake database>",  # optional
+    "schema": "<your snowflake schema>"  # optional
+}
+
+# Create a new Snowpark session with the specified connection parameters
+session = Session.builder.configs(connection_parameters).create()
+```
+
+3. To run the app, you can now run the main file (<code>stock_performance_app.py</code> in this case) using the follwing command.
+
+```python
+streamlit run stock_performance_app.py
+```
+
 
 ```diff
 - text in red
