@@ -397,6 +397,14 @@ To run the application, click on <strong>Run</strong> button located at the top 
 
 <br>
 
+In the application:
+
+1. Select <strong>Daily Stock Performance Data</strong> or <strong>Exchange (FX) Rates</strong> option from the sidebar.
+2. Select or unselect currencies to visualize euro exchange rates over time for select currencies.
+3. Select a different stock price metric and date range to visualize additional metrics for stock performance evaluation.
+
+<br>
+
 ```diff
 - text in red
 + text in green
