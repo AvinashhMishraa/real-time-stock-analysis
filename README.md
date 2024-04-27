@@ -244,6 +244,25 @@ In the above code snippet, a line chart is constructed which takes a dataframe a
 
 <br>
 
+# 7. Application Components
+
+Add the following code snippet to display application header, create a sidebar, and map <code>stock_prices()</code> and <code>fx_rates()</code> functions to Daily Stock Performance Data and Exchange (FX) Rates options respectively in the sidebar.
+
+```python
+# Display header
+st.header("Cybersyn: Financial & Economic Essentials")
+
+# Create sidebar and load the first page
+page_names_to_funcs = {
+    "Daily Stock Performance Data": stock_prices,
+    "Exchange (FX) Rates": fx_rates
+}
+selected_page = st.sidebar.selectbox("Select", page_names_to_funcs.keys())
+page_names_to_funcs[selected_page]()
+```
+
+<br>
+
 ```diff
 - text in red
 + text in green
