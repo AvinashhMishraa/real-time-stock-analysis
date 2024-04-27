@@ -405,7 +405,7 @@ In the application:
 
 ---
 
-However, if we want to build and run this application on local system and then deploy it anywhere in the cloud, we need to slightly change the code as in the following :
+⭐ However, if we want to build and run this application on local system and then deploy it anywhere in the cloud, we need to slightly change the code as in the following :
 
 1. First we need to install necessary packages.
    
