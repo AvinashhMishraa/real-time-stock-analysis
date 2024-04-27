@@ -395,8 +395,6 @@ To run the application, click on <strong>Run</strong> button located at the top 
 
 ![](Media/stock_performance_exchange_rate.gif)
 
-<br>
-
 In the application:
 
 1. Select <strong>Daily Stock Performance Data</strong> or <strong>Exchange (FX) Rates</strong> option from the sidebar.
