@@ -61,7 +61,7 @@ Streamlit enables data scientists and Python developers to combine Streamlit's c
 
 <br>
 
-You can have a look at the data description from the link above, but here is a sample view of <strong><span style="background-color: yellow">STOCK_PRICE_TIMESERIES</span></strong> (65.6 million rows) :
+We can have a look at the data description from the link above, but here is a sample view of <strong><span style="background-color: yellow">STOCK_PRICE_TIMESERIES</span></strong> (65.6 million rows) :
 
 <p align="center">
   <img src="Media/Sample Data View - stock price.PNG">
@@ -75,6 +75,7 @@ And here is the sample view of <strong><span style="background-color: yellow">FX
   <img src="Media/Sample Data View - FX Rates Timeseries.PNG">
 </p>
 
+<br>
 
 # 2. Get Started
 
@@ -90,9 +91,34 @@ Follow these steps to start building Streamlit application in Snowsight.
 
 <strong>Step 5.</strong> Click on <strong>Create</strong>
 
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;At this point, you will be provided code for an example Streamlit application
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;At this point, we will be provided code for an example Streamlit application
 
 <strong>Step 6.</strong> Replace sample application code displayed in the code editor on the left by following instructions in the subsequent steps
+
+<br>
+
+### 3. Application Setup
+
+Delete existing sample application code in the code editor on the left and add the following code snippet at the very top.
+
+
+```python
+# Import libraries
+from snowflake.snowpark.context import get_active_session
+from snowflake.snowpark.functions import sum, col, when, max, lag
+from snowflake.snowpark import Window
+from datetime import timedelta
+import altair as alt
+import streamlit as st
+import pandas as pd
+
+# Set page config
+st.set_page_config(layout="wide")
+
+# Get current session
+session = get_active_session()
+```
+
 
 
 ```diff
