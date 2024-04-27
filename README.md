@@ -388,6 +388,11 @@ selected_page = st.sidebar.selectbox("Select", page_names_to_funcs.keys())
 page_names_to_funcs[selected_page]()
 ```
 
+### Run
+To run the application, click on <strong>Run</strong> button located at the top right corner. If all goes well, you should see the application running as shown below.
+
+
+
 <br>
 
 ```diff
