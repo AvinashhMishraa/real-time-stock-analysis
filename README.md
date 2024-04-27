@@ -59,7 +59,7 @@ Streamlit enables data scientists and Python developers to combine Streamlit's c
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In the <strong><span style="color: blue;">[ Snowflake Marketplace](https://app.snowflake.com/marketplace/listing/GZTSZAS2KF7/cybersyn-financial-economic-essentials)</span></strong>, click on <strong>Get Data</strong> and follow the instructions to gain access. <br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In particular, we will use data in schema <strong>CYBERSYN</strong> from tables <strong><span style="background-color: yellow">STOCK_PRICE_TIMESERIES</span></strong> and <strong>FX_RATES_TIMESERIES</strong>.
 
-<span style="background-color: #ffffff;">This text has a yellow background.</span>
+<span style="background-color: `#ffffff`;">This text has a yellow background.</span>
 
 
 <br>
