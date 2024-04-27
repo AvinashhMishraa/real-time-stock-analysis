@@ -407,7 +407,7 @@ In the application:
 
 However, if we want to build and run this application on local system and then deploy it anywhere in the cloud, we need to slightly change the code as in the following :
 
-1. First you need to install necessary packages.
+1. First we need to install necessary packages.
    
 ```python
 pip install snowflake-connector-python
@@ -415,7 +415,7 @@ pip install snowflake-snowpark-python
 pip install streamlit
 ```
 
-2. Then you need to create a file where you would put all you <strong>credentials</strong> for connecting with Snowflake and Snowpark.
+2. Then we need to create a file where you would put all you <strong>credentials</strong> for connecting with Snowflake and Snowpark.
 
 ```Python
 from snowflake.snowpark.session import Session
@@ -435,12 +435,13 @@ connection_parameters = {
 session = Session.builder.configs(connection_parameters).create()
 ```
 
-3. To run the app, you can now run the main file (<code>stock_performance_app.py</code> in this case) using the follwing command.
+3. To run the app, we can now run the main file (<code>stock_performance_app.py</code> in this case) using the follwing command.
 
 ```python
 streamlit run stock_performance_app.py
 ```
 
+4. To deploy, we need to also create a <strong>text</strong> file by the name <code><strong>requirements</strong></code>
 
 ```diff
 - text in red
