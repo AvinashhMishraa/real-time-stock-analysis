@@ -126,7 +126,7 @@ In the above code snippet, we're importing the required libraries, setting the a
 ### 4. Load and Transform Data
 
 Now add the following Python function that loads and caches data from the <code style="color : blue">FINANCIAL__ECONOMIC_ESSENTIALS.CYBERSYN.STOCK_PRICE_TIMESERIES</code> and 
-<code style="color : blue">FINANCIAL__ECONOMIC_ESSENTIALS.CYBERSYN.FX_RATES_TIMESERIES</code> tables.
+<code style="color : #ffffff">FINANCIAL__ECONOMIC_ESSENTIALS.CYBERSYN.FX_RATES_TIMESERIES</code> tables.
 
 ```python
 @st.cache_data()
