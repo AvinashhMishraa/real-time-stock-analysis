@@ -449,20 +449,3 @@ pipreqs ./
 ```   
 
 Finally, to keep our credentails safe and not expose them in the publi, we can use <code><strong>st.secrets()</strong></code>
-
-```diff
-- text in red
-+ text in green
-! text in orange
-# text in gray
-@@ text in purple (and bold)@@
-```
-
-<br>
-
-
-
-
-<br>
-
-
