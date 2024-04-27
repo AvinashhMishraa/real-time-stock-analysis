@@ -22,7 +22,7 @@ A Streamlit application that loads and visualizes daily <strong>stock performanc
 
 Put the gif here
 
-<span style="font-size: larger">What is Snowspark?</span>
+### What is Snowspark?
 
 The set of libraries and runtime in Snowflake that securely deploy and process non-SQL code, including Python, Java and Scala.
 
