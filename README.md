@@ -163,7 +163,51 @@ df_stocks, df_fx = load_data()
 
 In the above code snippet, we're leveraging several Snowpark DataFrame functions to load and transform data. For example, <code>filter()</code>, <code>group_by()</code>, <code>agg()</code>, <code>sum()</code>, <code>alias()</code> and <code>isin()</code>.
 
+<br>
 
+### 5. Daily Stock Performance on the Nasdaq by Company
+
+Now add the following Python function that displays daily stock performance. Create selection dropdowns for date, stock ticker, and metric to be visualized.
+
+```python
+def stock_prices():
+    st.subheader('Stock Performance on the Nasdaq for the Magnificent 7')
+    
+    df_stocks['DATE'] = pd.to_datetime(df_stocks['DATE'])
+    max_date = df_stocks['DATE'].max()  # Most recent date
+    min_date = df_stocks['DATE'].min()  # Earliest date
+    
+    # Default start date as 30 days before the most recent date
+    default_start_date = max_date - timedelta(days=30)
+
+    # Use the adjusted default start date in the 'date_input' widget
+    start_date, end_date = st.date_input("Date range:", [default_start_date, max_date], min_value=min_date, max_value=max_date, key='date_range')
+    start_date_ts = pd.to_datetime(start_date)
+    end_date_ts = pd.to_datetime(end_date)
+
+    # Filter DataFrame based on the selected date range
+    df_filtered = df_stocks[(df_stocks['DATE'] >= start_date_ts) & (df_stocks['DATE'] <= end_date_ts)]
+    
+    # Ticker filter with multi-selection and default values
+    unique_tickers = df_filtered['TICKER'].unique().tolist()
+    default_tickers = [ticker for ticker in ['AAPL', 'MSFT', 'AMZN', 'GOOGL', 'META', 'TSLA', 'NVDA'] if ticker in unique_tickers]
+    selected_tickers = st.multiselect('Ticker(s):', unique_tickers, default=default_tickers)
+    df_filtered = df_filtered[df_filtered['TICKER'].isin(selected_tickers)]
+    
+    # Metric selection
+    metric = st.selectbox('Metric:',('DAY_OVER_DAY_CHANGE','POSTMARKET_CLOSE','NASDAQ_VOLUME'), index=0) # Default to DAY_OVER_DAY_CHANGE
+    
+    # Generate and display line chart for selected ticker(s) and metric
+    line_chart = alt.Chart(df_filtered).mark_line().encode(
+        x='DATE',
+        y=alt.Y(metric, title=metric),
+        color='TICKER',
+        tooltip=['TICKER','DATE',metric]
+    ).interactive()
+    st.altair_chart(line_chart, use_container_width=True)
+```
+
+In the above code snippet, a line chart is constructed which takes a dataframe as one of the parameters. In our case, that is a subset of the <code>df_stocks</code> dataframe filtered by ticker, date, and metric using Streamlit's built in components. This enhances the customizability of the visualization.
 
 
 <br>
