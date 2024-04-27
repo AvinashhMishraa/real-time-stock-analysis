@@ -76,6 +76,25 @@ And here is the sample view of <strong><span style="background-color: yellow">FX
 </p>
 
 
+# 2. Get Started
+
+Follow these steps to start building Streamlit application in Snowsight.
+
+<strong>Step 1.</strong> Click on <strong>Streamlit</strong> on the left navigation menu
+
+<strong>Step 2.</strong> Click on <strong>+ Streamlit App</strong> on the top right
+
+<strong>Step 3.</strong> Enter <strong>App name</strong>
+
+<strong>Step 4.</strong> Select <strong>Warehouse</strong> (X-Small) and <strong>App location</strong> (Database and Schema) where you'd like to create the Streamlit applicaton
+
+<strong>Step 5.</strong> Click on <strong>Create</strong>
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;At this point, you will be provided code for an example Streamlit application
+
+<strong>Step 6.</strong> Replace sample application code displayed in the code editor on the left by following instructions in the subsequent steps
+
+
 ```diff
 - text in red
 + text in green
