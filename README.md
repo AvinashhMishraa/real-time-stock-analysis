@@ -125,8 +125,8 @@ In the above code snippet, we're importing the required libraries, setting the a
 
 ### 4. Load and Transform Data
 
-Now add the following Python function that loads and caches data from the <code style="color : blue">FINANCIAL__ECONOMIC_ESSENTIALS.CYBERSYN.STOCK_PRICE_TIMESERIES</code> and 
-<code style="color : #ffffff">FINANCIAL__ECONOMIC_ESSENTIALS.CYBERSYN.FX_RATES_TIMESERIES</code> tables.
+Now add the following Python function that loads and caches data from the <code>FINANCIAL__ECONOMIC_ESSENTIALS.CYBERSYN.STOCK_PRICE_TIMESERIES</code> and 
+<code>FINANCIAL__ECONOMIC_ESSENTIALS.CYBERSYN.FX_RATES_TIMESERIES</code> tables.
 
 ```python
 @st.cache_data()
@@ -161,7 +161,7 @@ def load_data():
 df_stocks, df_fx = load_data()
 ```
 
-In the above code snippet, we're leveraging several Snowpark DataFrame functions to load and transform data. For example, filter(), group_by(), agg(), sum(), alias() and isin().
+In the above code snippet, we're leveraging several Snowpark DataFrame functions to load and transform data. For example, <code>filter()</code>, <code>group_by()</code>, <code>agg()</code>, <code>sum()</code>, <code>alias()</code> and <code>isin()</code>.
 
 
 
