@@ -125,10 +125,18 @@ In the above code snippet, we're importing the required libraries, setting the a
 
 ### 4. Load and Transform Data
 
-Now add the following Python function that loads and caches data from the  ```diff
-+ FINANCIAL__ECONOMIC_ESSENTIALS.CYBERSYN.STOCK_PRICE_TIMESERIES in green
-``` and
- and FINANCIAL__ECONOMIC_ESSENTIALS.CYBERSYN.FX_RATES_TIMESERIES tables.
+Now add the following Python function that loads and caches data from the  
+```diff
+FINANCIAL__ECONOMIC_ESSENTIALS.CYBERSYN.STOCK_PRICE_TIMESERIES in green
+```
+and
+```diff
+FINANCIAL__ECONOMIC_ESSENTIALS.CYBERSYN.FX_RATES_TIMESERIES in green
+```
+tables.
+
+
+<br>
 
 ```diff
 - text in red
@@ -141,11 +149,7 @@ Now add the following Python function that loads and caches data from the  ```di
 <br>
 
 
-```ruby
-require 'redcarpet'
-markdown = Redcarpet.new("Hello World!")
-puts markdown.to_html
-```
+
 
 <br>
 
