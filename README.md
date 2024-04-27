@@ -441,7 +441,14 @@ session = Session.builder.configs(connection_parameters).create()
 streamlit run stock_performance_app.py
 ```
 
-4. To deploy, we need to also create a <strong>text</strong> file by the name <code><strong>requirements</strong></code>
+4. To deploy, we need to also create a <strong>text</strong> file by the name <code><strong>requirements</strong></code> which will contain all necessary informations regarding what all packages need to be installed on the cloud. Run the follwing command on Terminal.
+
+```python
+pip install pipreqs
+pipreqs ./
+```   
+
+Finally, to keep our credentails safe and not expose them in the publi, we can use <code><strong>st.secrets()</strong></code>
 
 ```diff
 - text in red
