@@ -51,9 +51,12 @@ Streamlit enables data scientists and Python developers to combine Streamlit's c
 
 ### Prerequisites
 
-1. A Snowflake account in AWS US Oregon
+1. A <strong><span style="color: blue;">[Snowflake](https://www.snowflake.com/en/)</span></strong> account in <strong>AWS US Oregon</strong>
 
-2. Access to the Financial & Economic Essentials dataset provided by Cybersyn.
+2. Access to the <strong>Financial & Economic Essentials</strong> dataset provided by <strong>Cybersyn</strong>.
 
-   <div style="margin-left: 40px">In the Snowflake Marketplace, click on Get Data and follow the instructions to gain access. In particular, we will use data in schema CYBERSYN from tables STOCK_PRICE_TIMESERIES and FX_RATES_TIMESERIES.</div>
+       
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In the <strong><span style="color: blue;">[ Snowflake Marketplace](https://app.snowflake.com/marketplace/listing/GZTSZAS2KF7/cybersyn-financial-economic-essentials)</span></strong>, click on <strong>Get Data</strong> and follow the instructions to gain access. <br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;In particular, we will use data in schema <strong>CYBERSYN</strong> from tables <strong>STOCK_PRICE_TIMESERIES</strong> and <strong>FX_RATES_TIMESERIES</strong>.
+
 
