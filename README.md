@@ -61,5 +61,5 @@ Streamlit enables data scientists and Python developers to combine Streamlit's c
 
 
 <p align="center">
-  <img src="[https://github.com/AvinashhMishraa/real-time-stock-analysis/blob/main/Media/Snowpark%20Workflow.PNG](https://github.com/AvinashhMishraa/real-time-stock-analysis/blob/main/Media/Sample%20Data%20View%20-%20stock%20price.PNG)">
+  <img src="Media/Sample Data View - stock price.PNG">
 </p>
