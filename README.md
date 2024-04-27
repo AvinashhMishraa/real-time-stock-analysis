@@ -121,6 +121,15 @@ session = get_active_session()
 
 In the above code snippet, we're importing the required libraries, setting the application's page config to use full width of the browser window, and gaining access to the current session.
 
+<br>
+
+### 4. Load and Transform Data
+
+Now add the following Python function that loads and caches data from the FINANCIAL__ECONOMIC_ESSENTIALS.CYBERSYN.STOCK_PRICE_TIMESERIES and FINANCIAL__ECONOMIC_ESSENTIALS.CYBERSYN.FX_RATES_TIMESERIES tables.
+
+```diff
++ FINANCIAL__ECONOMIC_ESSENTIALS.CYBERSYN.STOCK_PRICE_TIMESERIES in green
+```
 
 ```diff
 - text in red
