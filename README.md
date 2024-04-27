@@ -209,6 +209,38 @@ def stock_prices():
 
 In the above code snippet, a line chart is constructed which takes a dataframe as one of the parameters. In our case, that is a subset of the <code>df_stocks</code> dataframe filtered by ticker, date, and metric using Streamlit's built in components. This enhances the customizability of the visualization.
 
+<br>
+
+# 6. EUR Exchange (FX) Rates by Quote Currency
+
+Next, add the following Python function that displays a currency selection dropdown and a chart to visualize euro exchange rates over time for the selected quote currencies.
+
+```python
+def fx_rates():
+    st.subheader('EUR Exchange (FX) Rates by Currency Over Time')
+
+    # GBP, CAD, USD, JPY, PLN, TRY, CHF
+    currencies = ['British Pound Sterling','Canadian Dollar','United States Dollar','Japanese Yen','Polish Zloty','Turkish Lira','Swiss Franc']
+    selected_currencies = st.multiselect('', currencies, default = ['British Pound Sterling','Canadian Dollar','United States Dollar','Swiss Franc','Polish Zloty'])
+    st.markdown("___")
+
+    # Display an interactive chart to visualize exchange rates over time by the selected currencies
+    with st.container():
+        currencies_list = currencies if len(selected_currencies) == 0 else selected_currencies
+        df_fx_filtered = df_fx[df_fx['QUOTE_CURRENCY_NAME'].isin(currencies_list)]
+        line_chart = alt.Chart(df_fx_filtered).mark_line(
+            color="lightblue",
+            line=True,
+        ).encode(
+            x='DATE',
+            y='VALUE',
+            color='QUOTE_CURRENCY_NAME',
+            tooltip=['QUOTE_CURRENCY_NAME','DATE','VALUE']
+        )
+        st.altair_chart(line_chart, use_container_width=True)
+```
+
+In the above code snippet, a line chart is constructed which takes a dataframe as one of the parameters. In our case, that is a subset of the <code>df_fx</code> dataframe filtered by the currencies selected via Streamlit's <code>multiselect()</code> user input component.
 
 <br>
 
