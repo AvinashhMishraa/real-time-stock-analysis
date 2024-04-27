@@ -61,6 +61,18 @@ Streamlit enables data scientists and Python developers to combine Streamlit's c
 
 <span style="background-color: `#ffffff`;">This text has a yellow background.</span>
 
+
+
+
+<br>
+
+<p align="center">
+  <img src="Media/Sample Data View - stock price.PNG">
+</p>
+
+
+
+
 ```diff
 - text in red
 + text in green
@@ -69,9 +81,11 @@ Streamlit enables data scientists and Python developers to combine Streamlit's c
 @@ text in purple (and bold)@@
 ```
 
-
 <br>
 
-<p align="center">
-  <img src="Media/Sample Data View - stock price.PNG">
-</p>
+
+```ruby
+require 'redcarpet'
+markdown = Redcarpet.new("Hello World!")
+puts markdown.to_html
+```
