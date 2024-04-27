@@ -103,7 +103,7 @@ Delete existing sample application code in the code editor on the left and add t
 
 
 ```python
-# Import libraries
+- # Import libraries in red
 from snowflake.snowpark.context import get_active_session
 from snowflake.snowpark.functions import sum, col, when, max, lag
 from snowflake.snowpark import Window
@@ -112,10 +112,10 @@ import altair as alt
 import streamlit as st
 import pandas as pd
 
-# Set page config
+- # Set page config in red
 st.set_page_config(layout="wide")
 
-# Get current session
+- # Get current session in red
 session = get_active_session()
 ```
 
