@@ -48,3 +48,5 @@ Streamlit enables data scientists and Python developers to combine Streamlit's c
 ### What is Cybersyn?
 
 <strong><span style="color: blue;">[Cybersyn](https://app.cybersyn.com/data_catalog/)</span></strong> is a data-as-a-service-company creating a real-time view of the world's economy with analytics-ready economic data on Snowflake Marketplace. Cybersyn builds derived data products from datasets that are difficult to procure, clean, or join. With Cybersyn, you can access external data directly in your Snowflake instance - no ETL requred.
+
+<span style="color: red">How does our Data look like?</span?
