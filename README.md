@@ -97,7 +97,7 @@ Follow these steps to start building Streamlit application in Snowsight.
 
 <br>
 
-### 3. Application Setup
+# 3. Application Setup
 
 Delete existing sample application code in the code editor on the left and add the following code snippet at the very top.
 
@@ -123,7 +123,7 @@ In the above code snippet, we're importing the required libraries, setting the a
 
 <br>
 
-### 4. Load and Transform Data
+# 4. Load and Transform Data
 
 Now add the following Python function that loads and caches data from the <code>FINANCIAL__ECONOMIC_ESSENTIALS.CYBERSYN.STOCK_PRICE_TIMESERIES</code> and 
 <code>FINANCIAL__ECONOMIC_ESSENTIALS.CYBERSYN.FX_RATES_TIMESERIES</code> tables.
@@ -165,7 +165,7 @@ In the above code snippet, we're leveraging several Snowpark DataFrame functions
 
 <br>
 
-### 5. Daily Stock Performance on the Nasdaq by Company
+# 5. Daily Stock Performance on the Nasdaq by Company
 
 Now add the following Python function that displays daily stock performance. Create selection dropdowns for date, stock ticker, and metric to be visualized.
 
