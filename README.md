@@ -125,11 +125,10 @@ In the above code snippet, we're importing the required libraries, setting the a
 
 ### 4. Load and Transform Data
 
-Now add the following Python function that loads and caches data from the FINANCIAL__ECONOMIC_ESSENTIALS.CYBERSYN.STOCK_PRICE_TIMESERIES and FINANCIAL__ECONOMIC_ESSENTIALS.CYBERSYN.FX_RATES_TIMESERIES tables.
-
-```diff
+Now add the following Python function that loads and caches data from the  ```diff
 + FINANCIAL__ECONOMIC_ESSENTIALS.CYBERSYN.STOCK_PRICE_TIMESERIES in green
-```
+``` and
+ and FINANCIAL__ECONOMIC_ESSENTIALS.CYBERSYN.FX_RATES_TIMESERIES tables.
 
 ```diff
 - text in red
