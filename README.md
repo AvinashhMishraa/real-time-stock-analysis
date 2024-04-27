@@ -409,11 +409,11 @@ However, if we want to build and run this application on local system and then d
 
 1. First you need to install necessary packages.
    
-<code>
+```python
 pip install snowflake-connector-python
 pip install snowflake-snowpark-python
 pip install streamlit
-</code>
+```
    
 
 ```diff
