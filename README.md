@@ -403,6 +403,19 @@ In the application:
 
 <br>
 
+---
+
+However, if we want to build and run this application on local system and then deploy it anywhere in the cloud, we need to slightly change the code as in the following :
+
+1. First you need to install necessary packages.
+   
+<code>
+pip install snowflake-connector-python
+pip install snowflake-snowpark-python
+pip install streamlit
+</code>
+   
+
 ```diff
 - text in red
 + text in green
